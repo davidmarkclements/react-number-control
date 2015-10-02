@@ -1,7 +1,11 @@
-const React = require('react')
-const {Component} = React
+class Component {}
 
 class NumberSpinner extends Component {
+  state = {
+    max: 4,
+    min: 0,
+    n: 0
+  }
   constructor({max = 4, min = 0, n = 0}) {
     super()
     this.setState({max, min, n})

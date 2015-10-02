@@ -4,7 +4,7 @@
   "description": "Bare bones number control - functionality only, you supply the styling.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src/index.js > lib/index.js",
+    "build": "babel --stage 0 src/index.js > lib/index.js",
     "prepublish": "npm run build"
   },
   "files": [
