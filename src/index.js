@@ -1,4 +1,5 @@
-class Component {}
+const React = require('react')
+const {Component} = React
 
 class NumberControl extends Component {
   constructor({max = 4, min = 0, n = 0}) {
