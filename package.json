@@ -1,0 +1,19 @@
+{
+  "name": "react-number-control",
+  "version": "1.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src/index.js > lib/index.js",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "David Mark Clements",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "react": "^0.14.0-rc1"
+  }
+}
