@@ -1,14 +1,9 @@
 class Component {}
 
-class NumberSpinner extends Component {
-  state = {
-    max: 4,
-    min: 0,
-    n: 0
-  }
+class NumberControl extends Component {
   constructor({max = 4, min = 0, n = 0}) {
     super()
-    this.setState({max, min, n})
+    this.state = {max, min, n}
   }
   compenentWillReceiveProps({max = 4, min = 0, n = 0}) {
     this.setState({max, min, n})
@@ -47,4 +42,4 @@ class NumberSpinner extends Component {
   }
 }
 
-module.exports = NumberSpinner
+module.exports = NumberControl
