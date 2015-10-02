@@ -6,9 +6,9 @@ Bare bones number control - functionality only, you supply the styling.
 
 ```js
 const React = require('react')
-const NumberSpinner = require('react-number-control')
+const NumberControl = require('react-number-control')
  
-const spinner = <NumberSpinner 
+const spinner = <NumberControl 
   max={4} 
   min={0} 
   n={0}
