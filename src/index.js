@@ -13,14 +13,12 @@ class NumberControl extends Component {
     const {min} = this.state
     let {n} = this.state
     n -= 1
-    console.log(n, min)
     if (n >= min) this.setState({n: n})
   }
   plus() {
     const {max} = this.state
     let {n} = this.state
     n += 1
-    console.log(n, max)
     if (n <= max) this.setState({n: n})
   }
   render() {
