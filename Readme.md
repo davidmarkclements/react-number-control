@@ -11,7 +11,9 @@ const NumberSpinner = require('react-number-control')
 const spinner = <NumberSpinner 
   max={4} 
   min={0} 
-  n={0} 
+  n={0}
+  onChange={fn}
+  onReject={fn}
   className='user-supplied-main-class'
   childClasses={
     {
@@ -26,9 +28,7 @@ const spinner = <NumberSpinner
 
 ```
 
-All arguments are optional. 
-
-
+All arguments are optional.
 
 ## Credits
 
