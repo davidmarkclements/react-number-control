@@ -1,6 +1,6 @@
 {
   "name": "react-number-control",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Bare bones number control - functionality only, you supply the styling.",
   "main": "lib/index.js",
   "scripts": {
