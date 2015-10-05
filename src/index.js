@@ -37,8 +37,8 @@ class NumberControl extends Component {
         <span onClick={() => this.minus()} className={minus} key='ns-minus'>
           {minusChar}
         </span>
-        <span className={plus} key='ns-num'>{n}</span>
-        <span onClick={() => this.plus()} className={num} key='ns-plus'>
+        <span className={num} key='ns-num'>{n}</span>
+        <span onClick={() => this.plus()} className={plus} key='ns-plus'>
           {plusChar}
         </span>
       </div>
