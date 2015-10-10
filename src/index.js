@@ -5,9 +5,11 @@ const noop = ()=>{}
 class NumberControl extends Component {
   constructor({max = 4, min = 0, n = 0}) {
     super()
+    n = (n > max) ? max : (n < min) ? min : n
     this.state = {max, min, n}
   }
   componentWillReceiveProps({max = 4, min = 0, n = 0}) {
+    n = (n > max) ? max : (n < min) ? min : n
     this.setState({max, min, n})
   }
   minus() {
@@ -29,9 +31,8 @@ class NumberControl extends Component {
   } 
   render() {
     const {n} = this.state
-    const {className = 'ns', childClasses = {}, chars = {}} = this.props
+    const {className = 'ns', childClasses = {}, chars = {}, minusChar = '-', plusChar = '+'} = this.props
     const {minus = 'ns-minus', num = 'ns-num', plus = 'ns-plus'} = childClasses
-    const {minusChar = '-', plusChar = '+'} = chars
     return (
       <div className={className}>
         <span onClick={() => this.minus()} className={minus} key='ns-minus'>
