@@ -128,7 +128,7 @@ test('onChange', async ({same}) => {
 
 })
 
-test.only('onReject', async ({same}) => {
+test('onReject', async ({same}) => {
   
   {
     const cmp = render(<NumberControl n={1} max={1} onReject={(...actual) => {
